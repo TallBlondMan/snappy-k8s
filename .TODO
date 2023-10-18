@@ -1,0 +1,12 @@
+[] Deploy images to AWS docker repo
+[] Try automaiting the creation of docker repo on AWS
+[] Use EKS with autoscaler
+[] Use secretes for databse and server
+[] Test CORS when deploying remotely
+[] Test the remote deployment
+[] Create a databse for backend to connect - it creates test now
+[] Work on Database - maybe a config file for deployment
+[] Make the infrastructure for app deploy via Terraform/eksctl
+[] Maybe use Jenkins for deployment - deploy Jenkins via Terraform on AWS
+[] Use Mongo Replica Set for database - see how it fares with the backend (https://www.mongodb.com/docs/kubernetes-operator/stable/tutorial/deploy-replica-set/) 
+[] Deploy the app in EKS

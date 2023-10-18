@@ -9,6 +9,8 @@ services:
       - 27017:27017
     networks:
       - snappyNet
+    volumes:
+      - database:/data/db
   snappy-front:
     image: snappy-frontend:1
     networks:
@@ -26,3 +28,5 @@ services:
 
 networks:
   snappyNet:
+volumes:
+  database:

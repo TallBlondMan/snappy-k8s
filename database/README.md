@@ -1,3 +1,3 @@
 # Database for the app
 
-This will use MongoDB cluster
+MongoDB with configoration file
