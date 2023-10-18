@@ -1,0 +1,28 @@
+version: '3'
+services:
+  snappy-db:
+    image: snappy-db:1
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=passwd
+    ports:
+      - 27017:27017
+    networks:
+      - snappyNet
+  snappy-front:
+    image: snappy-frontend:1
+    networks:
+      - snappyNet
+    ports:
+      - 3000:3000
+  snappy-backend:
+    image: snappy-back:2 
+    environment:
+      - MONGO_URL=mongodb://admin:passwd@snappy-db:27017
+    networks:
+      - snappyNet
+    ports:
+      - 5000:5000
+
+networks:
+  snappyNet:
